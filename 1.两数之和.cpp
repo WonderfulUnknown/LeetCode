@@ -10,7 +10,7 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         map<int,int> myMap;
         vector<int> result;
-        for (int i = 0; i < nums.size() ; i++)
+        for (int i = 0; i < nums.size(); i++)
         {
             if (myMap.find(target - nums[i]) != myMap.end())
                 result = {myMap[target - nums[i]], i};
